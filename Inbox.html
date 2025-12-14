@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Diary</title>
+    <link rel="stylesheet" href="./Inbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link rel="icon" href="./logoexe.png">
+    <meta name="author" content="Feranmi">
+    <meta name="copyright" content="© 2025 Feranmi. All rights reserved.">
+
+
+</head>
+<body>
+    <a href="../love.html" class="backButton">
+    <i class="fa-solid fa-arrow-left"></i>
+    </a>
+    <div class="container">
+        <h1>Your inbox</h1>
+        <form id="searchForm" onsubmit="return false;">
+            <div class="input-wrapper">
+                <input type="text" id= "searchInput" placeholder="Search" required />
+                <button type="submit" id="search-icon">
+                    <div id="search-icon-circle"></div>
+                    <span></span>
+                </button>
+            </div>
+        </form>
+        <div class="inbox-sent-tabs" style="margin-bottom: 20px; display: flex; gap: 10px;">
+        </div>
+        <div id="lettersList"></div>
+    </div>
+  <script type="module" src="./Inbox.js"></script>
+</body>
+</html>

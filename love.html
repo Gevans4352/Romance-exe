@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romance.exe</title>
+    <link rel="stylesheet" href="./love.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="icon" href="./logoexe.png">
+    <meta name="author" content="Feranmi">
+    <meta name="copyright" content="© 2025 Feranmi. All rights reserved.">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">   
+        <header class="header">
+            <div class="logoWrapper">
+                <div class="logo">
+                    <i class="fa-solid fa-heart-circle-check"></i>
+                </div>
+            </div>
+            <h1>
+                Hey, Stranger
+            </h1>
+            <button class="themeToggle">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </header>
+        <div class="mainContainer">
+            <div class="promptContainer">
+                <textarea name="" id="textLetter" class="promptInput" placeholder="Enter Your Name..." required autofocus></textarea>
+                <button type="button" class="promptButton">
+                    <i class="fa-solid fa-dice"></i>
+                </button>
+                <div id="loveLetter"></div>
+                 <div class="envelope" id="envelope">
+                <div class="envelope-flap"></div>
+                <div class="envelope-letter">💌</div>
+            </div>
+            </div>
+            <div class="houses">
+                <button type="button" class="checkButton">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                <a href="./Inbox.html" class="heartStorage">
+                    <i class="fa-solid fa-clipboard"></i>
+                </a>
+                <form id="emailForm" class="hidden">
+                    <button class="send-btn" data-index="0">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+            <div id="letterStorage">
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./love.js"></script>
+</body>
+</html>
