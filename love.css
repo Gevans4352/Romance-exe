@@ -135,6 +135,7 @@ background: var(--color-gradient);
 }
 .promptContainer .promptInput::placeholder{
     color: var(--color-placeholder);
+    font-size: medium;
 }
 .promptContainer .promptButton{
 position: absolute;
