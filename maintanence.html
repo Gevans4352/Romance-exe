@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maintenance</title>
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #f7c6ff, #e0c3fc);
+      color: #4a2c6f;
+      text-align: center;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.7);
+      padding: 2.5rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .warning {
+      font-size: 5rem;
+      font-weight: 900;
+      color: #ff6ec7;
+      margin-bottom: 0.5rem;
+      animation: float 2s ease-in-out infinite,
+                 glow 1.8s ease-in-out infinite;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    img {
+      width: 160px;
+      max-width: 100%;
+      border-radius: 12px;
+    }
+
+    @keyframes float {
+      0%   { transform: translateY(0); }
+      50%  { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    @keyframes glow {
+      0% {
+        text-shadow: 0 0 5px #ffb3e6;
+      }
+      50% {
+        text-shadow:
+          0 0 12px #ff6ec7,
+          0 0 24px #c77dff;
+      }
+      100% {
+        text-shadow: 0 0 5px #ffb3e6;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="warning">!</div>
+
+    <h1>We'll be back soon!</h1>
+
+    <p>Our app is under maintenance. Thanks for your patience 💛</p>
+
+    <img
+      src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2x5NXN3ZzI3NmJ5bWRpOHkzOW9zZ2R1cTZ5M2p0eDVzY2c4eCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3oriO0OEd9QIDdllqo/giphy.gif"
+      alt="Happy maintenance gif"
+    />
+  </div>
+</body>
+</html>
