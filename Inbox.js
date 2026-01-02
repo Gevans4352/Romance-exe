@@ -30,9 +30,16 @@ onAuthStateChanged(auth, (user) => {
 });
 
 const lettersList = document.getElementById("lettersList");
-
 const searchInput = document.getElementById("searchInput");
 let letters = [];  
+
+function showLoader() {
+  document.getElementById('loaderOverlay').style.display = 'flex';
+}
+
+function hideLoader() {
+  document.getElementById('loaderOverlay').style.display = 'none';
+}
 async function loadLettersFromFirebase() {
   if (!currentUser) return [];
   
@@ -59,10 +66,13 @@ async function loadLettersFromFirebase() {
   } catch (error) {
     console.error("Error loading letters:", error);
     return [];
+  }finally{
+    hideLoader()
   }
 }
 
 async function updateLetters() {
+  showLoader()
   letters = await loadLettersFromFirebase();
   
   lettersList.innerHTML = "";
@@ -1147,6 +1157,5 @@ function generateThemedPDF(letter, themeName) {
   doc.setFontSize(20);
   doc.text(theme.decorLeft, 20, 280);
   doc.text(theme.decorLeft, 190, 280);
-  
   doc.save(`${theme.name.toLowerCase()}_love_letter.pdf`);
 }

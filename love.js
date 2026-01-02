@@ -56,16 +56,19 @@ const messages = [
  `NAME, forget the charts you're my #1, always.`,
 ];
 
+
 let savedName = "";
+let isFirstClick = true;
 
 promptButton.addEventListener("click", () => {
-  const currentValue = promptInput.value.trim();
-  const name = currentValue || "Love";
-  if (!savedName) {
-    savedName = name;
+  if (isFirstClick) {
+    const currentValue = promptInput.value.trim();
+    savedName = currentValue || "Love";
+    isFirstClick = false;
   }
-  const prompt = messages[Math.floor(Math.random() * messages.length)];
-  const personalized = prompt.replace(/NAME/g, savedName);
+  const randomIndex = Math.floor(Math.random() * messages.length);
+  const prompt = messages[randomIndex];
+  const personalized = prompt.replace(/NAME/g, savedName); 
   promptInput.value = personalized;
   promptInput.focus();
 });
