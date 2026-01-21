@@ -14,9 +14,7 @@ Whether it’s a heartfelt confession or a sweet note, Romance.exe turns emotion
 - Getting Started  
 - How It Works  
 - Project Structure  
-- Use Cases  
-- Known Issues  
-- Planned Enhancements  
+- Use Cases.
 - License  
 
 ##  About
