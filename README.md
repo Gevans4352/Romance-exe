@@ -27,7 +27,7 @@ There is just words, feelings, and a beautifully minimal interface.
 ##  Features
 
 - Write personalized love letters  
-- Send and receive replies  
+- Send and receive replies!
 - Download letters as files  
 - Soft, romantic UI design  
 - Runs entirely in the browser  
